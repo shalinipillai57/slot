@@ -29,85 +29,116 @@ Execute the program using runserver command.
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Time vs Slot Table</title>
+  <title>Slot Time Table</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f6f9;
-      padding: 20px;
+      margin: 20px;
+      text-align: center;
     }
     h2 {
+      margin-bottom: 10px;
+      color: darkblue;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 15px auto;
+      width: 80%;
+    }
+    table, th, td {
+      border: 2px solid black;
+    }
+    th, td {
+      padding: 10px;
       text-align: center;
-      margin-bottom: 20px;
     }
-    .schedule {
-      display: grid;
-      grid-template-columns: 150px repeat(5, 1fr);
-      gap: 10px;
-      max-width: 900px;
-      margin: auto;
+    th {
+      background: gold;
     }
-    .box {
-      border: 2px solid #4CAF50;
-      border-radius: 8px;
-      padding: 15px;
-      text-align: center;
-      background: #fff;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    .slot {
+      background: #66e0ff;
     }
-    .time {
-      background: #4CAF50;
-      color: white;
-      font-weight: bold;
+    .subject-table th {
+      background: #ddd;
     }
   </style>
 </head>
 <body>
 
-  <h2>Time vs Slot Schedule</h2>
+  <h2>SLOT TIME TABLE - Shalini (25015951)</h2>
 
-  <div class="schedule">
-    <!-- Header -->
-    <div class="box time">Time</div>
-    <div class="box">Slot 1</div>
-    <div class="box">Slot 2</div>
-    <div class="box">Slot 3</div>
-    <div class="box">Slot 4</div>
-    <div class="box">Slot 5</div>
+  <!-- Timetable -->
+  <table>
+    <tr>
+      <th>Day/Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>8-10</td>
+      <td class="slot">FUNDAMENTALS OF C PROGRAMMING</td>
+      <td class="slot">COMMUNICTIVE ENGLISH</td>
+      <td class="slot">PHYSICS FOR QUANTUM COMPUTATION</td>
+      <td class="slot">STATISTICS AND NUMERICALMETHODS</td>
+      <td class="slot">FUNDAMENTALS OF C PROGRAMMING</td>
+    </tr>
+    <tr>
+      <td>10-12</td>
+      <td class="slot">FREE SLOT</td>
+      <td class="slot">FUNDAMENTALS OF WEB APPLICATION AND DEVELOPMENT</td>
+      <td class="slot">FWAD</td>
+      <td class="slot">FWAD</td>
+      <td class="slot">PHY</td>
+    </tr>
+    <tr>
+      <td>12-1</td>
+      <td colspan="5"><b>L U N C H</b></td>
+    </tr>
+    <tr>
+      <td>1-3</td>
+      <td class="slot">FREE SLOT</td>
+      <td class="slot">MAT</td>
+      <td class="slot">MAT</td>
+      <td class="slot">MAT</td>
+      <td class="slot">SS</td>
+    </tr>
+    <tr>
+      <td>3-5</td>
+      <td class="slot">FREE SLOT</td>
+      <td class="slot">GER</td>
+      <td class="slot">CHE</td>
+      <td class="slot">CHE</td>
+      <td class="slot">FWAD</td>
+    </tr>
+  </table>
 
-    <!-- Row 1 -->
-    <div class="box time">9:00 - 10:00</div>
-    <div class="box">Math</div>
-    <div class="box">English</div>
-    <div class="box">Science</div>
-    <div class="box">Free</div>
-    <div class="box">Sports</div>
-
-    <!-- Row 2 -->
-    <div class="box time">10:00 - 11:00</div>
-    <div class="box">Physics</div>
-    <div class="box">Chemistry</div>
-    <div class="box">Biology</div>
-    <div class="box">Math</div>
-    <div class="box">Free</div>
-
-    <!-- Row 3 -->
-    <div class="box time">11:00 - 12:00</div>
-    <div class="box">History</div>
-    <div class="box">Geography</div>
-    <div class="box">Civics</div>
-    <div class="box">English</div>
-    <div class="box">Free</div>
-  </div>
+  <!-- Subject Codes Table -->
+  <h3>Subject Details</h3>
+  <table class="subject-table">
+    <tr>
+      <th>S. No.</th>
+      <th>Subject Code</th>
+      <th>Subject Name</th>
+    </tr>
+    <tr><td>1</td><td>19AI414</td><td>Fundamentals of Web Application Development (FWAD)</td></tr>
+    <tr><td>2</td><td>19EN612</td><td>German Basic (GER)</td></tr>
+    <tr><td>3</td><td>19PH206</td><td>Physics for Information Technology (PHY)</td></tr>
+    <tr><td>4</td><td>19CY205</td><td>Principles of Chemistry in Engineering (CHE)</td></tr>
+    <tr><td>5</td><td>19MA201</td><td>Calculus and Matrix Algebra (MAT)</td></tr>
+    <tr><td>6</td><td>19EY701</td><td>Soft Skills (SS)</td></tr>
+  </table>
 
 </body>
 </html>
 ```
 
 ## OUTPUT
+  ![alt text](<Screenshot 2025-09-20 161636.png>)
+![alt text](<Screenshot 2025-09-20 161651.png>)
 
-![alt text](<Screenshot 2025-09-20 151703.png>)
 
 ## RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
